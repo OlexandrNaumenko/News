@@ -1,0 +1,60 @@
+body {
+  background-color: #fafafa; }
+  body .wrapper {
+    margin: 21px 130px; }
+    body .wrapper .advertising {
+      height: 143px;
+      margin-bottom: 21px;
+      width: 1280px; }
+      body .wrapper .advertising .adv-logo {
+        position: relative;
+        left: 27px;
+        bottom: 117px; }
+        body .wrapper .advertising .adv-logo .bmw {
+          height: 298px; }
+      body .wrapper .advertising .text {
+        position: relative;
+        left: 325px;
+        bottom: 189px; }
+        body .wrapper .advertising .text .text-top-p {
+          font-size: 36px; }
+        body .wrapper .advertising .text .text-bot-p {
+          font-size: 18px; }
+    body .wrapper .header {
+      width: 1280px; }
+      body .wrapper .header .info-top {
+        color: #212121;
+        font-weight: 600;
+        height: 61px;
+        background-color: #fcfcfc; }
+        body .wrapper .header .info-top .info-top-left {
+          font-size: 14px;
+          margin: 23px 0 0 19px;
+          float: left;
+          text-align: left; }
+          body .wrapper .header .info-top .info-top-left .el {
+            float: left;
+            margin-right: 40px; }
+          body .wrapper .header .info-top .info-top-left .date {
+            color: #bdbdbd; }
+          body .wrapper .header .info-top .info-top-left .wheather {
+            color: #212121; }
+          body .wrapper .header .info-top .info-top-left .btn {
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            color: #212121;
+            background-color: #fff9c4; }
+        body .wrapper .header .info-top .info-top-right {
+          font-size: 14px;
+          text-align: right;
+          margin: 23px 19px 0 0; }
+          body .wrapper .header .info-top .info-top-right .el-right {
+            float: left;
+            margin-right: 40px; }
+          body .wrapper .header .info-top .info-top-right .plus {
+            color: #00a13c; }
+          body .wrapper .header .info-top .info-top-right .language:last-child {
+            margin-right: 0; }
+
+/*# sourceMappingURL=main.css.map */
