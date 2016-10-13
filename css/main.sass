@@ -7,37 +7,21 @@ body
   font-family: 'Open Sans', sans-serif
 
   .wrapper
-    margin: 21px 130px
+    margin: 21px 70px
 
     .advertising
       height: 143px
+      //width: 1209px
+      //max-width: 1209px
       margin-bottom: 21px
-      width: 1280px
-      position: relative
+      //overflow: hidden
 
-      .adv-logo
-        position: relative
-        left: 27px
-        bottom: 117px
-        //height: 298px
-
-        .bmw
-          height: 298px
-
-      .text
-        position: absolute
-        left: 306px
-        bottom: 37px
-
-        .text-top-p
-          font-size: 36px
-
-        .text-bot-p
-          font-size: 18px
+      img
+        width: 100%
 
     .header
-      width: 1280px
-
+      display: table
+      width: 100%
       .info-top
         color: #212121
         font-weight: 600
@@ -54,7 +38,17 @@ body
 
           .el
             float: left
-            margin-right: 40px
+            margin-right: 20px
+
+            //@media all and (min-width: 950px) and (max-width: 1200px)
+            //  margin-right: 12px
+            //@media all and (min-width: 750px) and (max-width: 950px)
+            //  margin-right: 12px
+            //@media all and (max-width: 750px)
+            //  margin-right: 12px
+
+
+
           .date
             color: #bdbdbd
 
@@ -64,7 +58,7 @@ body
             border: 1px solid #efefef
             border-bottom: none
             border-top: none
-            padding: 0 27px
+            padding: 0 10px
 
             .left
               display: block
@@ -90,12 +84,13 @@ body
             background-color: #fff9c4
             position: relative
             bottom: 6px
+            right: 0px
 
 
         .info-top-right
           font-size: 14px
-          text-align: right
           margin: 23px 19px 0 0
+          float: right
           .el-right
             float: left
             margin-right: 40px
@@ -111,62 +106,99 @@ body
           .vertical-line
             border-left: 1px solid #efefef
             padding-left: 14px
+      .menu
+        background-color: #ffffff
+        display: table
+        width: 100%
 
-    .menu
-      height: 92px
-      background-color: #ffffff
-      border-spacing: 10px
-      padding: 0 19px
 
-      .logo-min,.menu-ctg,.btn, .beta
-        float: left
+        .menu-wrapper
+          height: 92px
+          border-spacing: 10px
+          padding: 0 19px
+          display: table
 
-      .logo-min
-        font-family: "DidactGothicRegular"
-        font-weight: bold
-        font-size: 33px
-        padding: 13px 0
 
-      .beta
-        font-family: "GothamProBlack"
-        font-size: 11px
-        margin-top: 16px
-        margin-right: 63px
+          @media all and (min-width: 768px) and (max-width: 992px)
+            padding: 0 3px
+            width: 597px
+            margin: 0 auto
 
-      .menu-ctg
-        //margin-right: 18px
-        font-size: 18px
-        margin: 24px 18px 24px 0
-        font-weight: 600
+          @media all and (max-width: 768px)
 
-      .green
-        color: #03ac42
+          .logo-min,.menu-ctg,.btn, .beta
+            float: left
 
-        &:last-child
-          margin-right: 0
+          .logo-min
+            font-family: "DidactGothicRegular"
+            font-weight: bold
+            font-size: 33px
+            padding: 21px 0
 
-      .sing-up
-        margin: 20px 0
-        .btn
-          border: 1px solid #efefef
-          padding: 15px 28px
-          color: #212121
-          font-size: 16px
-          background-color: transparent
-          font-weight: 600
+          .beta
+            font-family: "GothamProBlack"
+            font-size: 11px
+            margin-top: 23px
+            margin-right: 63px
 
-        .btn-reg
-          background-color: #029c40
-          color: #ffffff
-          margin-left: 10px
+            @media all and (min-width: 992px) and (max-width: 1200px)
+              margin-right: 29px
+            @media all and (min-width: 768px) and (max-width: 992px)
+              margin-right: 12px
+            @media all and (max-width: 768px)
+              margin-right: 12px
+
+
+          .menu-ctg
+            //margin-right: 18px
+            font-size: 18px
+            margin: 33px 18px 24px 0
+            font-weight: 600
+
+            &:last-child
+              margin-right: 0px
+
+          .green
+            color: #03ac42
+
+            &:last-child
+              margin-right: 0
+
+        .sing-up
+          margin: 20px 0
+          float: right
+
+          @media all and (min-width: 768px) and (max-width: 992px)
+            float: none
+            text-align: center
+
+
+          .btn
+            border: 1px solid #efefef
+            padding: 15px 28px
+            color: #212121
+            font-size: 16px
+            background-color: transparent
+            font-weight: 600
+
+          .btn-reg
+            background-color: #029c40
+            color: #ffffff
+            margin-left: 10px
+            margin-right: 13px
+
+            @media all and (min-width: 768px) and (max-width: 992px)
+              margin-right: 0px
+
 
     .content
       color: #212121
       background-color: #ffffff
       font-family: $font-for-block
+      display: table
 
       .cont-wrapper
-        width: 1259px
+        //width: 1259px
         border-top: 1px solid #efefef
         margin: 0 21px 0 21px
         padding: 23px 0
@@ -264,73 +296,81 @@ body
                   font-size: 13px
                   //font-weight: bold
 
-      .big-block-kind-two
-        @extend .big-block
+        .big-block-kind-two
+          @extend .big-block
 
-      .very-small-block
-        padding: 27px 14px 20px
-        border-top: 1px solid #efefef
-        width: 300px
+        .very-small-block
+          padding: 27px 14px 20px
+          border-top: 1px solid #efefef
+          width: 300px
 
-        .icon-very-sm-bl
-          border-radius: 35px
-          background-color: #fafafa
-          display: table
-          height: 52px
-          width: 52px
-          text-align: center
-          padding-top: 16px
-          color: #000000
-          float: left
-          margin-right: 22px
-          margin-top: 9px
-
-
-
-        .text-very-sm-bl
-          font-size: 16px
-
-      .big-block-big-img
-        position: relative
-
-        .big-img-dis
-          position: absolute
-          bottom: 30px
-          left: 21px
-
-          .img-dis-title
-            color: rgba(255, 255, 255, 0.45)
-            font-size: 10px
-
-          .img-dis-text
-            font-size: 24px
-            color: #ffffff
-            font-family: "GothamProMedium"
-
-          .img-dis-last-row
-            color: #ffffff
-            font-size: 13px
+          .icon-very-sm-bl
+            border-radius: 35px
+            background-color: #fafafa
+            display: table
+            height: 52px
+            width: 52px
+            text-align: center
+            padding-top: 16px
+            color: #000000
+            float: left
+            margin-right: 22px
+            margin-top: 9px
 
 
 
+          .text-very-sm-bl
+            font-size: 16px
+
+        .big-block-big-img
+          position: relative
+
+          .big-img-dis
+            position: absolute
+            bottom: 30px
+            left: 21px
+
+            .img-dis-title
+              color: rgba(255, 255, 255, 0.45)
+              font-size: 10px
+
+            .img-dis-text
+              font-size: 24px
+              color: #ffffff
+              font-family: "GothamProMedium"
+
+            .img-dis-last-row
+              color: #ffffff
+              font-size: 13px
 
 
-    .refresh
-      text-align: center
-      font-size: 32px
-      font-weight: 700
-      height: 163px
 
-      .more-news
-        text-transform: uppercase
-        font-size: 15px
 
-      .zmdi-replay
-        padding-top: 48px
 
-    .footer
-      background-color: #f5f5f5
-      .bottom-menu
+  .refresh
+    text-align: center
+    font-size: 32px
+    font-weight: 700
+    height: 163px
+    display: table
+    width: 100%
+
+    .more-news
+      text-transform: uppercase
+      font-size: 15px
+
+    .zmdi-replay
+      padding-top: 48px
+
+  .footer
+    background-color: #f5f5f5
+    padding: 0 89px
+    .bottom-menu
+
+      margin: 0 auto
+      width: 527px
+
+      .wrap-for-ctg
         font-size: 14px
         color: #171717
         border: 1px solid #efefef
@@ -338,97 +378,102 @@ body
         border-left: none
         height: 70px
         font-weight: 600
-
         .menu-ctg
           margin-right: 50px
           float: left
           padding: 28px 0
 
-      .bottom-menu-big
-        .categories
-          .all-devices
-            font-family: "GothamProBlack"
-            font-size: 24px
-            font-weight: bold
-            background-color: black
-            color: #ffffff
-            border: 3px solid #f5f5f5
-            display: table
-            padding: 0 8px
+          &:last-child
+            margin-right: 0px
 
-          .pad
-            margin-top: 69px
+    .bottom-menu-big
+      .categories
+        .all-devices
+          font-family: "GothamProBlack"
+          font-size: 24px
+          font-weight: bold
+          background-color: black
+          color: #ffffff
+          border: 3px solid #f5f5f5
+          display: table
+          padding: 0 8px
 
-
-            &:last-child
-              margin-bottom: 70px
-
-          .pd,.services
-            .bot-title
-              font-size: 18px
-              color: #000
-              font-weight: 600
-              margin-top: 70px
-              margin-bottom: 49px
-
-            .pd-ctg
-              font-family: "GothamPro"
-              font-size: 14px
-              font-weight: bold
-              color: #616161
-
-          .services
-            .bot-title
-            .ser-ctg
-              @extend .pd-ctg
-              color: #171717
-
-          .adv-ban-bot
-            margin-top: 75px
-
-            .adv-bot
-              margin-bottom: 37px
-              color: #000000
-              font-size: 18px
-              font-weight: bold
-
-            .ban-bot
-              font-size: 14px
-              color: #616161
-              font-family: "GothamPro"
+        .pad
+          margin-top: 69px
 
 
-          .age
+          &:last-child
+            margin-bottom: 70px
+
+        .pd,.services
+          .bot-title
             font-size: 18px
-            border-radius: 40px
-            background-color: #171717
-            color: #ffffff
-            display: table
-            padding: 10px
-            margin: 90px 29px 0 0
+            color: #000
+            font-weight: 600
+            margin-top: 70px
+            margin-bottom: 49px
 
-      .big-picture
-        margin-top: 30px
+          .pd-ctg
+            font-family: "GothamPro"
+            font-size: 14px
+            font-weight: bold
+            color: #616161
 
-      .brand
-        text-align: center
-        padding-top: 58px
+        .services
+          .bot-title
+          .ser-ctg
+            @extend .pd-ctg
+            color: #171717
 
-        .apple
-          margin-right: 15px
+        .adv-ban-bot
+          margin-top: 75px
 
-        .apple,.google
-          border: 1px solid #efefef
-          padding: 8px
+          .adv-bot
+            margin-bottom: 37px
+            color: #000000
+            font-size: 18px
+            font-weight: bold
+
+          .ban-bot
+            font-size: 14px
+            color: #616161
+            font-family: "GothamPro"
+
+
+        .age
+          font-size: 18px
+          border-radius: 40px
+          background-color: #171717
+          color: #ffffff
+          display: table
+          padding: 10px
+          margin: 90px 29px 0 0
+
+    .big-picture
+      margin-top: 30px
+
+      img
+        width: 100%
+
+    .brand
+      text-align: center
+      padding-top: 58px
+
+      .apple
+        margin-right: 15px
+
+      .apple,.google
+        border: 1px solid #efefef
+        padding: 8px
 
 
 
-      .rules
-        font-size: 12px
-        color: #b6b6b6
-        text-align: center
-        padding-top: 50px
-        padding-bottom: 66px
+    .rules
+      font-size: 12px
+      color: #b6b6b6
+      text-align: center
+      padding-top: 50px
+      padding-bottom: 66px
 
 
 

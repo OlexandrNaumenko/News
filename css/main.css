@@ -12,6 +12,12 @@
   padding-right: 0px;
   padding-left: 0px; }
 
+.row {
+  margin: 0; }
+
+.btn {
+  padding: 6px 9px; }
+
 @font-face {
   font-family: "GothamProBlack";
   src: url("../fonts/GothamProBlack/GothamProBlack.eot");
@@ -46,28 +52,15 @@ body {
   background-color: #fafafa;
   font-family: "Open Sans", sans-serif; }
   body .wrapper {
-    margin: 21px 130px; }
+    margin: 21px 70px; }
     body .wrapper .advertising {
       height: 143px;
-      margin-bottom: 21px;
-      width: 1280px;
-      position: relative; }
-      body .wrapper .advertising .adv-logo {
-        position: relative;
-        left: 27px;
-        bottom: 117px; }
-        body .wrapper .advertising .adv-logo .bmw {
-          height: 298px; }
-      body .wrapper .advertising .text {
-        position: absolute;
-        left: 306px;
-        bottom: 37px; }
-        body .wrapper .advertising .text .text-top-p {
-          font-size: 36px; }
-        body .wrapper .advertising .text .text-bot-p {
-          font-size: 18px; }
+      margin-bottom: 21px; }
+      body .wrapper .advertising img {
+        width: 100%; }
     body .wrapper .header {
-      width: 1280px; }
+      display: table;
+      width: 100%; }
       body .wrapper .header .info-top {
         color: #212121;
         font-weight: 600;
@@ -80,7 +73,7 @@ body {
           text-align: left; }
           body .wrapper .header .info-top .info-top-left .el {
             float: left;
-            margin-right: 40px; }
+            margin-right: 20px; }
           body .wrapper .header .info-top .info-top-left .date {
             color: #bdbdbd; }
           body .wrapper .header .info-top .info-top-left .wheather {
@@ -88,7 +81,7 @@ body {
             border: 1px solid #efefef;
             border-bottom: none;
             border-top: none;
-            padding: 0 27px; }
+            padding: 0 10px; }
             body .wrapper .header .info-top .info-top-left .wheather .left {
               display: block;
               margin-left: 20px;
@@ -106,11 +99,12 @@ body {
             color: #212121;
             background-color: #fff9c4;
             position: relative;
-            bottom: 6px; }
+            bottom: 6px;
+            right: 0px; }
         body .wrapper .header .info-top .info-top-right {
           font-size: 14px;
-          text-align: right;
-          margin: 23px 19px 0 0; }
+          margin: 23px 19px 0 0;
+          float: right; }
           body .wrapper .header .info-top .info-top-right .el-right {
             float: left;
             margin-right: 40px; }
@@ -123,50 +117,79 @@ body {
           body .wrapper .header .info-top .info-top-right .vertical-line {
             border-left: 1px solid #efefef;
             padding-left: 14px; }
-    body .wrapper .menu {
-      height: 92px;
-      background-color: #ffffff;
-      border-spacing: 10px;
-      padding: 0 19px; }
-      body .wrapper .menu .logo-min, body .wrapper .menu .menu-ctg, body .wrapper .menu .btn, body .wrapper .menu .beta {
-        float: left; }
-      body .wrapper .menu .logo-min {
-        font-family: "DidactGothicRegular";
-        font-weight: bold;
-        font-size: 33px;
-        padding: 13px 0; }
-      body .wrapper .menu .beta {
-        font-family: "GothamProBlack";
-        font-size: 11px;
-        margin-top: 16px;
-        margin-right: 63px; }
-      body .wrapper .menu .menu-ctg {
-        font-size: 18px;
-        margin: 24px 18px 24px 0;
-        font-weight: 600; }
-      body .wrapper .menu .green {
-        color: #03ac42; }
-        body .wrapper .menu .green:last-child {
-          margin-right: 0; }
-      body .wrapper .menu .sing-up {
-        margin: 20px 0; }
-        body .wrapper .menu .sing-up .btn {
-          border: 1px solid #efefef;
-          padding: 15px 28px;
-          color: #212121;
-          font-size: 16px;
-          background-color: transparent;
-          font-weight: 600; }
-        body .wrapper .menu .sing-up .btn-reg {
-          background-color: #029c40;
-          color: #ffffff;
-          margin-left: 10px; }
+      body .wrapper .header .menu {
+        background-color: #ffffff;
+        display: table;
+        width: 100%; }
+        body .wrapper .header .menu .menu-wrapper {
+          height: 92px;
+          border-spacing: 10px;
+          padding: 0 19px;
+          display: table; }
+          @media all and (min-width: 768px) and (max-width: 992px) {
+            body .wrapper .header .menu .menu-wrapper {
+              padding: 0 3px;
+              width: 597px;
+              margin: 0 auto; } }
+          body .wrapper .header .menu .menu-wrapper .logo-min, body .wrapper .header .menu .menu-wrapper .menu-ctg, body .wrapper .header .menu .menu-wrapper .btn, body .wrapper .header .menu .menu-wrapper .beta {
+            float: left; }
+          body .wrapper .header .menu .menu-wrapper .logo-min {
+            font-family: "DidactGothicRegular";
+            font-weight: bold;
+            font-size: 33px;
+            padding: 21px 0; }
+          body .wrapper .header .menu .menu-wrapper .beta {
+            font-family: "GothamProBlack";
+            font-size: 11px;
+            margin-top: 23px;
+            margin-right: 63px; }
+            @media all and (min-width: 992px) and (max-width: 1200px) {
+              body .wrapper .header .menu .menu-wrapper .beta {
+                margin-right: 29px; } }
+            @media all and (min-width: 768px) and (max-width: 992px) {
+              body .wrapper .header .menu .menu-wrapper .beta {
+                margin-right: 12px; } }
+            @media all and (max-width: 768px) {
+              body .wrapper .header .menu .menu-wrapper .beta {
+                margin-right: 12px; } }
+          body .wrapper .header .menu .menu-wrapper .menu-ctg {
+            font-size: 18px;
+            margin: 33px 18px 24px 0;
+            font-weight: 600; }
+            body .wrapper .header .menu .menu-wrapper .menu-ctg:last-child {
+              margin-right: 0px; }
+          body .wrapper .header .menu .menu-wrapper .green {
+            color: #03ac42; }
+            body .wrapper .header .menu .menu-wrapper .green:last-child {
+              margin-right: 0; }
+        body .wrapper .header .menu .sing-up {
+          margin: 20px 0;
+          float: right; }
+          @media all and (min-width: 768px) and (max-width: 992px) {
+            body .wrapper .header .menu .sing-up {
+              float: none;
+              text-align: center; } }
+          body .wrapper .header .menu .sing-up .btn {
+            border: 1px solid #efefef;
+            padding: 15px 28px;
+            color: #212121;
+            font-size: 16px;
+            background-color: transparent;
+            font-weight: 600; }
+          body .wrapper .header .menu .sing-up .btn-reg {
+            background-color: #029c40;
+            color: #ffffff;
+            margin-left: 10px;
+            margin-right: 13px; }
+            @media all and (min-width: 768px) and (max-width: 992px) {
+              body .wrapper .header .menu .sing-up .btn-reg {
+                margin-right: 0px; } }
     body .wrapper .content {
       color: #212121;
       background-color: #ffffff;
-      font-family: "GothamProRegular"; }
+      font-family: "GothamProRegular";
+      display: table; }
       body .wrapper .content .cont-wrapper {
-        width: 1259px;
         border-top: 1px solid #efefef;
         margin: 0 21px 0 21px;
         padding: 23px 0; }
@@ -234,53 +257,59 @@ body {
                 color: #212121; }
                 body .wrapper .content .cont-wrapper .big-block .entry-dis .analitics .text .text-last-row, body .wrapper .content .cont-wrapper .big-block-kind-two .entry-dis .analitics .text .text-last-row {
                   font-size: 13px; }
-      body .wrapper .content .very-small-block {
-        padding: 27px 14px 20px;
-        border-top: 1px solid #efefef;
-        width: 300px; }
-        body .wrapper .content .very-small-block .icon-very-sm-bl {
-          border-radius: 35px;
-          background-color: #fafafa;
-          display: table;
-          height: 52px;
-          width: 52px;
-          text-align: center;
-          padding-top: 16px;
-          color: #000000;
-          float: left;
-          margin-right: 22px;
-          margin-top: 9px; }
-        body .wrapper .content .very-small-block .text-very-sm-bl {
-          font-size: 16px; }
-      body .wrapper .content .big-block-big-img {
-        position: relative; }
-        body .wrapper .content .big-block-big-img .big-img-dis {
-          position: absolute;
-          bottom: 30px;
-          left: 21px; }
-          body .wrapper .content .big-block-big-img .big-img-dis .img-dis-title {
-            color: rgba(255, 255, 255, 0.45);
-            font-size: 10px; }
-          body .wrapper .content .big-block-big-img .big-img-dis .img-dis-text {
-            font-size: 24px;
-            color: #ffffff;
-            font-family: "GothamProMedium"; }
-          body .wrapper .content .big-block-big-img .big-img-dis .img-dis-last-row {
-            color: #ffffff;
-            font-size: 13px; }
-    body .wrapper .refresh {
-      text-align: center;
-      font-size: 32px;
-      font-weight: 700;
-      height: 163px; }
-      body .wrapper .refresh .more-news {
-        text-transform: uppercase;
-        font-size: 15px; }
-      body .wrapper .refresh .zmdi-replay {
-        padding-top: 48px; }
-    body .wrapper .footer {
-      background-color: #f5f5f5; }
-      body .wrapper .footer .bottom-menu {
+        body .wrapper .content .cont-wrapper .very-small-block {
+          padding: 27px 14px 20px;
+          border-top: 1px solid #efefef;
+          width: 300px; }
+          body .wrapper .content .cont-wrapper .very-small-block .icon-very-sm-bl {
+            border-radius: 35px;
+            background-color: #fafafa;
+            display: table;
+            height: 52px;
+            width: 52px;
+            text-align: center;
+            padding-top: 16px;
+            color: #000000;
+            float: left;
+            margin-right: 22px;
+            margin-top: 9px; }
+          body .wrapper .content .cont-wrapper .very-small-block .text-very-sm-bl {
+            font-size: 16px; }
+        body .wrapper .content .cont-wrapper .big-block-big-img {
+          position: relative; }
+          body .wrapper .content .cont-wrapper .big-block-big-img .big-img-dis {
+            position: absolute;
+            bottom: 30px;
+            left: 21px; }
+            body .wrapper .content .cont-wrapper .big-block-big-img .big-img-dis .img-dis-title {
+              color: rgba(255, 255, 255, 0.45);
+              font-size: 10px; }
+            body .wrapper .content .cont-wrapper .big-block-big-img .big-img-dis .img-dis-text {
+              font-size: 24px;
+              color: #ffffff;
+              font-family: "GothamProMedium"; }
+            body .wrapper .content .cont-wrapper .big-block-big-img .big-img-dis .img-dis-last-row {
+              color: #ffffff;
+              font-size: 13px; }
+  body .refresh {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    height: 163px;
+    display: table;
+    width: 100%; }
+    body .refresh .more-news {
+      text-transform: uppercase;
+      font-size: 15px; }
+    body .refresh .zmdi-replay {
+      padding-top: 48px; }
+  body .footer {
+    background-color: #f5f5f5;
+    padding: 0 89px; }
+    body .footer .bottom-menu {
+      margin: 0 auto;
+      width: 527px; }
+      body .footer .bottom-menu .wrap-for-ctg {
         font-size: 14px;
         color: #171717;
         border: 1px solid #efefef;
@@ -288,70 +317,74 @@ body {
         border-left: none;
         height: 70px;
         font-weight: 600; }
-        body .wrapper .footer .bottom-menu .menu-ctg {
+        body .footer .bottom-menu .wrap-for-ctg .menu-ctg {
           margin-right: 50px;
           float: left;
           padding: 28px 0; }
-      body .wrapper .footer .bottom-menu-big .categories .all-devices {
-        font-family: "GothamProBlack";
-        font-size: 24px;
-        font-weight: bold;
-        background-color: black;
-        color: #ffffff;
-        border: 3px solid #f5f5f5;
-        display: table;
-        padding: 0 8px; }
-      body .wrapper .footer .bottom-menu-big .categories .pad {
-        margin-top: 69px; }
-        body .wrapper .footer .bottom-menu-big .categories .pad:last-child {
-          margin-bottom: 70px; }
-      body .wrapper .footer .bottom-menu-big .categories .pd .bot-title, body .wrapper .footer .bottom-menu-big .categories .services .bot-title {
+          body .footer .bottom-menu .wrap-for-ctg .menu-ctg:last-child {
+            margin-right: 0px; }
+    body .footer .bottom-menu-big .categories .all-devices {
+      font-family: "GothamProBlack";
+      font-size: 24px;
+      font-weight: bold;
+      background-color: black;
+      color: #ffffff;
+      border: 3px solid #f5f5f5;
+      display: table;
+      padding: 0 8px; }
+    body .footer .bottom-menu-big .categories .pad {
+      margin-top: 69px; }
+      body .footer .bottom-menu-big .categories .pad:last-child {
+        margin-bottom: 70px; }
+    body .footer .bottom-menu-big .categories .pd .bot-title, body .footer .bottom-menu-big .categories .services .bot-title {
+      font-size: 18px;
+      color: #000;
+      font-weight: 600;
+      margin-top: 70px;
+      margin-bottom: 49px; }
+    body .footer .bottom-menu-big .categories .pd .pd-ctg, body .footer .bottom-menu-big .categories .pd .services .ser-ctg, body .footer .bottom-menu-big .categories .services .pd .ser-ctg, body .footer .bottom-menu-big .categories .services .pd-ctg, body .footer .bottom-menu-big .categories .services .ser-ctg {
+      font-family: "GothamPro";
+      font-size: 14px;
+      font-weight: bold;
+      color: #616161; }
+    body .footer .bottom-menu-big .categories .services .ser-ctg {
+      color: #171717; }
+    body .footer .bottom-menu-big .categories .adv-ban-bot {
+      margin-top: 75px; }
+      body .footer .bottom-menu-big .categories .adv-ban-bot .adv-bot {
+        margin-bottom: 37px;
+        color: #000000;
         font-size: 18px;
-        color: #000;
-        font-weight: 600;
-        margin-top: 70px;
-        margin-bottom: 49px; }
-      body .wrapper .footer .bottom-menu-big .categories .pd .pd-ctg, body .wrapper .footer .bottom-menu-big .categories .pd .services .ser-ctg, body .wrapper .footer .bottom-menu-big .categories .services .pd .ser-ctg, body .wrapper .footer .bottom-menu-big .categories .services .pd-ctg, body .wrapper .footer .bottom-menu-big .categories .services .ser-ctg {
-        font-family: "GothamPro";
+        font-weight: bold; }
+      body .footer .bottom-menu-big .categories .adv-ban-bot .ban-bot {
         font-size: 14px;
-        font-weight: bold;
-        color: #616161; }
-      body .wrapper .footer .bottom-menu-big .categories .services .ser-ctg {
-        color: #171717; }
-      body .wrapper .footer .bottom-menu-big .categories .adv-ban-bot {
-        margin-top: 75px; }
-        body .wrapper .footer .bottom-menu-big .categories .adv-ban-bot .adv-bot {
-          margin-bottom: 37px;
-          color: #000000;
-          font-size: 18px;
-          font-weight: bold; }
-        body .wrapper .footer .bottom-menu-big .categories .adv-ban-bot .ban-bot {
-          font-size: 14px;
-          color: #616161;
-          font-family: "GothamPro"; }
-      body .wrapper .footer .bottom-menu-big .categories .age {
-        font-size: 18px;
-        border-radius: 40px;
-        background-color: #171717;
-        color: #ffffff;
-        display: table;
-        padding: 10px;
-        margin: 90px 29px 0 0; }
-      body .wrapper .footer .big-picture {
-        margin-top: 30px; }
-      body .wrapper .footer .brand {
-        text-align: center;
-        padding-top: 58px; }
-        body .wrapper .footer .brand .apple {
-          margin-right: 15px; }
-        body .wrapper .footer .brand .apple, body .wrapper .footer .brand .google {
-          border: 1px solid #efefef;
-          padding: 8px; }
-      body .wrapper .footer .rules {
-        font-size: 12px;
-        color: #b6b6b6;
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 66px; }
+        color: #616161;
+        font-family: "GothamPro"; }
+    body .footer .bottom-menu-big .categories .age {
+      font-size: 18px;
+      border-radius: 40px;
+      background-color: #171717;
+      color: #ffffff;
+      display: table;
+      padding: 10px;
+      margin: 90px 29px 0 0; }
+    body .footer .big-picture {
+      margin-top: 30px; }
+      body .footer .big-picture img {
+        width: 100%; }
+    body .footer .brand {
+      text-align: center;
+      padding-top: 58px; }
+      body .footer .brand .apple {
+        margin-right: 15px; }
+      body .footer .brand .apple, body .footer .brand .google {
+        border: 1px solid #efefef;
+        padding: 8px; }
+    body .footer .rules {
+      font-size: 12px;
+      color: #b6b6b6;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 66px; }
 
 /*# sourceMappingURL=main.css.map */
